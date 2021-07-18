@@ -19,3 +19,12 @@ const Route = use('Route')
 Route.on('/').render('home')
 
 Route.get('/posts', 'PostController.index')
+
+Route.get('/posts/add', 'PostController.add')
+
+Route.get('/posts/:id', 'PostController.details')
+
+Route.post('/posts', 'PostController.store')
+
+
+
